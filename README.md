@@ -22,3 +22,5 @@ To use this, you must install Keras using
 pip install keras
 python3 -m pip install tensorflow
 ```
+We can download the dataset from
+https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
