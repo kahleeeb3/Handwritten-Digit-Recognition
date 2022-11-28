@@ -1,8 +1,6 @@
 # ML-Project
 ## Getting Started
-The typical link to the dataset is 
-[yann.lecun.com/exdb/mnist/](yann.lecun.com/exdb/mnist/)
-However we can also import the data using keras:
+The dataset can be found on the <a href="http://yann.lecun.com/exdb/mnist/">MNIST homepage</a>. However we can also import the data using keras:
 ```python
 from keras.datasets import mnist
 
