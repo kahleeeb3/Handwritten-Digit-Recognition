@@ -1,8 +1,8 @@
 # ML-Project
 ## Getting Started
 The typical link to the dataset is 
-https://yann.lecun.com/exdb/mnist/
-but its locked by username and password so if we use
+[yann.lecun.com/exdb/mnist/](yann.lecun.com/exdb/mnist/)
+However we can also import the data using keras:
 ```python
 from keras.datasets import mnist
 
