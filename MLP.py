@@ -1,6 +1,7 @@
 import numpy as np
 from functions import * # import all from functions.py
 from keras.datasets import mnist
+import time # for calc runtime
 
 def main():
 
@@ -41,10 +42,13 @@ def main():
 
     # testing number of epochs
     train(epochs = 50, batch = 64, lr = 1e-3, L2N = 350, L3N = 350)
-
     # testing batch size
-    for i in [5,10,15,30,60,100,150,20,300]:
+    for i in [200]:
+        st = time.time() # get the start time
         train(epochs = 10, batch = i, lr = 1e-3, L2N = 350, L3N = 350)
+        et = time.time() # get the end time
+        elapsed_time = et - st
+        print('Execution time:', elapsed_time, 'seconds')
     """
     # ================================================================
 
