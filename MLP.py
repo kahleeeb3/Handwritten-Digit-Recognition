@@ -21,9 +21,8 @@ def main():
     train(epochs = 10, batch = 64, lr = 1e-3, L2N = 350, L3N = 350)
 
     # ================================================================
-    """
     # this is for collecting data
-
+    """
     # testing learning rate
     for i in [2,3,4,5,6]:
         lr = 1*10**(-(i))
@@ -44,11 +43,10 @@ def main():
     train(epochs = 50, batch = 64, lr = 1e-3, L2N = 350, L3N = 350)
 
     # testing batch size
-    for i in [5,10,15,30,60,100,300]:
+    for i in [5,10,15,30,60,100,150,20,300]:
         train(epochs = 10, batch = i, lr = 1e-3, L2N = 350, L3N = 350)
     """
     # ================================================================
-
 
 
 def train(epochs,batch,lr,L2N,L3N):
